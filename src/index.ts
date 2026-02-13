@@ -125,7 +125,7 @@ function getWsUrl(): string {
 function createMcpServer(): McpServer {
   const mcp = new McpServer(
     {
-      name: "websocket-mcp",
+      name: "helium-rapid-websocket-mcp",
       version: "1.0.0",
     },
     {

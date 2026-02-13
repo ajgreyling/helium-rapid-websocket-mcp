@@ -2,7 +2,7 @@
 
 MCP server that connects to the Helium logging WebSocket and exposes live log entries to [Cursor](https://cursor.com) (or any MCP client) for debugging. It supports two transports:
 
-**Install:** `npm install websocket-mcp` or run with `npx websocket-mcp`
+**Install:** `npm install helium-rapid-websocket-mcp` or run with `npx helium-rapid-websocket-mcp`
 
 - **stdio** (recommended for Cursor): Cursor spawns the server and passes config via `mcp.json` `env`. All credentials stay in mcp.json.
 - **SSE**: The server runs as an HTTP process and Cursor connects via URL. New messages are pushed via MCP resource subscriptions over SSE.
@@ -128,7 +128,7 @@ Configure the WebSocket URL and credentials in `mcp.json` so Cursor spawns the s
 ```json
 "helium-logs": {
   "command": "npx",
-  "args": ["-y", "websocket-mcp"],
+  "args": ["-y", "helium-rapid-websocket-mcp"],
   "env": {
     "MCP_TRANSPORT": "stdio",
     "WS_URL": "wss://helium.mezzanineware.com/api/ws2/logging?appId=YOUR_APP_ID",
@@ -144,7 +144,7 @@ Configure the WebSocket URL and credentials in `mcp.json` so Cursor spawns the s
 ```json
 "helium-logs": {
   "command": "node",
-  "args": ["${workspaceFolder}/node_modules/websocket-mcp/build/index.js"],
+  "args": ["${workspaceFolder}/node_modules/helium-rapid-websocket-mcp/build/index.js"],
   "env": {
     "MCP_TRANSPORT": "stdio",
     "WS_URL": "wss://helium.mezzanineware.com/api/ws2/logging?appId=YOUR_APP_ID",
