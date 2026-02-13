@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import fs from "fs";
+import path from "path";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
@@ -49,6 +51,49 @@ function getLogsText(tail?: number): string {
   return lines.join("\n");
 }
 
+function formatHeliumLogMessage(rawText: string): string {
+  let jsonStr = rawText.trim();
+  if (jsonStr.startsWith("< ")) {
+    jsonStr = jsonStr.slice(2);
+  } else if (jsonStr.startsWith("<")) {
+    jsonStr = jsonStr.slice(1);
+  }
+  try {
+    const obj = JSON.parse(jsonStr) as {
+      millis?: number;
+      key?: string;
+      value?: string;
+    };
+    const millis = obj.millis;
+    const key = obj.key;
+    const value = obj.value;
+    if (
+      millis != null &&
+      typeof key === "string" &&
+      typeof value === "string"
+    ) {
+      const iso = new Date(millis).toISOString();
+      return `${iso} - ${key} - ${value}`;
+    }
+  } catch {
+    /* fall through to raw */
+  }
+  return rawText;
+}
+
+function writeToDebugLogFile(line: string): void {
+  if (process.env.OUTPUT_TO_CURSOR_DEBUG_LOG !== "true") return;
+  const debugPath = process.env.DEBUG_LOG_FILE;
+  if (!debugPath) return;
+  try {
+    const dir = path.dirname(debugPath);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.appendFileSync(debugPath, line + "\n");
+  } catch (err) {
+    console.error("Failed to write to debug log file:", err);
+  }
+}
+
 function connectWebSocket(
   url: string,
   auth: { user: string; password: string },
@@ -65,7 +110,9 @@ function connectWebSocket(
   });
 
   ws.on("open", () => {
-    appendLog(`[${new Date().toISOString()}] WebSocket connected`);
+    const line = `[${new Date().toISOString()}] WebSocket connected`;
+    appendLog(line);
+    writeToDebugLogFile(line);
     onLogUpdate();
   });
 
@@ -73,18 +120,21 @@ function connectWebSocket(
     const text =
       typeof data === "string" ? data : (data as Buffer).toString("utf8");
     appendLog(text);
+    writeToDebugLogFile(formatHeliumLogMessage(text));
     onLogUpdate();
   });
 
   ws.on("close", (code, reason) => {
-    appendLog(
-      `[${new Date().toISOString()}] WebSocket closed (code=${code} reason=${reason.toString()})`
-    );
+    const line = `[${new Date().toISOString()}] WebSocket closed (code=${code} reason=${reason.toString()})`;
+    appendLog(line);
+    writeToDebugLogFile(line);
     onLogUpdate();
   });
 
   ws.on("error", (err) => {
-    appendLog(`[${new Date().toISOString()}] WebSocket error: ${err.message}`);
+    const line = `[${new Date().toISOString()}] WebSocket error: ${err.message}`;
+    appendLog(line);
+    writeToDebugLogFile(line);
     onLogUpdate();
   });
 

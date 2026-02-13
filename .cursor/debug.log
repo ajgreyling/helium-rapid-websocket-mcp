@@ -1,0 +1,201 @@
+[2026-02-13T11:21:05.306Z] WebSocket connected
+2026-02-13T08:25:01.350Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:25:01.353Z - INFO - unpack_readings_json empty
+2026-02-13T08:28:12.922Z - INFO - Completed running function refreshMvServiceRequestData
+2026-02-13T08:30:00.865Z - INFO - unpack_readings_json started
+2026-02-13T08:30:00.872Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:30:00.875Z - INFO - unpack_readings_json empty
+2026-02-13T08:35:01.069Z - INFO - unpack_readings_json started
+2026-02-13T08:35:01.080Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:35:01.084Z - INFO - unpack_readings_json empty
+2026-02-13T08:38:51.916Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T08:38:51.919Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T08:38:51.924Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T08:38:51.927Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T08:38:51.930Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T08:38:51.933Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T08:38:51.936Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T08:38:51.939Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T08:38:51.942Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T08:40:01.156Z - INFO - unpack_readings_json started
+2026-02-13T08:40:01.169Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:40:01.173Z - INFO - unpack_readings_json empty
+2026-02-13T08:45:00.029Z - INFO - unpack_readings_json started
+2026-02-13T08:45:00.036Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:45:00.041Z - INFO - unpack_readings_json empty
+2026-02-13T08:48:12.983Z - INFO - processAsyncCSVParseTasks type= doBackgroundProcessing=true
+2026-02-13T08:48:12.990Z - INFO - processAsyncCSVParseTasks tasksFound=0
+2026-02-13T08:48:12.992Z - INFO - processAsyncCSVParseTasks: No tasks found to process for type=
+2026-02-13T08:48:17.702Z - INFO - Completed running function refreshMvWorkOrderLabourData
+2026-02-13T08:50:00.017Z - INFO - unpack_readings_json started
+2026-02-13T08:50:00.027Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:50:00.036Z - INFO - unpack_readings_json empty
+2026-02-13T08:55:00.083Z - INFO - unpack_readings_json started
+2026-02-13T08:55:00.093Z - INFO - unpack_readings_json - list count=0
+2026-02-13T08:55:00.096Z - INFO - unpack_readings_json empty
+2026-02-13T09:00:00.256Z - INFO - unpack_readings_json started
+2026-02-13T09:00:00.262Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:00:00.264Z - INFO - unpack_readings_json empty
+2026-02-13T09:05:02.130Z - INFO - unpack_readings_json started
+2026-02-13T09:05:02.151Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:05:02.154Z - INFO - unpack_readings_json empty
+2026-02-13T09:08:01.939Z - INFO - Completed running function refreshMvWorkOrderTravelData
+2026-02-13T09:10:00.038Z - INFO - unpack_readings_json started
+2026-02-13T09:10:00.049Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:10:00.053Z - INFO - unpack_readings_json empty
+2026-02-13T09:15:00.591Z - INFO - unpack_readings_json started
+2026-02-13T09:15:00.597Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:15:00.604Z - INFO - unpack_readings_json empty
+2026-02-13T09:20:00.809Z - INFO - unpack_readings_json started
+2026-02-13T09:20:00.818Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:20:00.823Z - INFO - unpack_readings_json empty
+2026-02-13T09:20:26.021Z - INFO - Completed running function migrateGISData
+2026-02-13T09:24:00.152Z - INFO - Completed running function runUpdateFacilityGISData
+2026-02-13T09:24:14.631Z - INFO - processAsyncCSVParseTasks type= doBackgroundProcessing=true
+2026-02-13T09:24:14.650Z - INFO - processAsyncCSVParseTasks tasksFound=0
+2026-02-13T09:24:14.653Z - INFO - processAsyncCSVParseTasks: No tasks found to process for type=
+2026-02-13T09:25:00.018Z - INFO - unpack_readings_json started
+2026-02-13T09:25:00.030Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:25:00.037Z - INFO - unpack_readings_json empty
+2026-02-13T09:28:13.754Z - INFO - Completed running function refreshMvWorkOrderMaterialData
+2026-02-13T09:30:00.457Z - INFO - unpack_readings_json started
+2026-02-13T09:30:00.464Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:30:00.468Z - INFO - unpack_readings_json empty
+2026-02-13T09:35:00.019Z - INFO - unpack_readings_json started
+2026-02-13T09:35:00.026Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:35:00.029Z - INFO - unpack_readings_json empty
+2026-02-13T09:40:00.014Z - INFO - unpack_readings_json started
+2026-02-13T09:40:00.040Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:40:00.044Z - INFO - unpack_readings_json empty
+2026-02-13T09:45:00.017Z - INFO - unpack_readings_json started
+2026-02-13T09:45:00.022Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:45:00.026Z - INFO - unpack_readings_json empty
+2026-02-13T09:48:12.341Z - INFO - processAsyncCSVParseTasks type= doBackgroundProcessing=true
+2026-02-13T09:48:12.352Z - INFO - processAsyncCSVParseTasks tasksFound=0
+2026-02-13T09:48:12.354Z - INFO - processAsyncCSVParseTasks: No tasks found to process for type=
+2026-02-13T09:48:17.720Z - INFO - Completed running function refreshMvWorkOrderExpensesData
+2026-02-13T09:50:00.011Z - INFO - unpack_readings_json started
+2026-02-13T09:50:00.017Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:50:00.020Z - INFO - unpack_readings_json empty
+2026-02-13T09:55:00.373Z - INFO - unpack_readings_json started
+2026-02-13T09:55:00.389Z - INFO - unpack_readings_json - list count=0
+2026-02-13T09:55:00.394Z - INFO - unpack_readings_json empty
+2026-02-13T10:00:00.393Z - INFO - unpack_readings_json started
+2026-02-13T10:00:00.409Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:00:00.417Z - INFO - unpack_readings_json empty
+2026-02-13T10:05:00.671Z - INFO - unpack_readings_json started
+2026-02-13T10:05:00.685Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:05:00.688Z - INFO - unpack_readings_json empty
+2026-02-13T10:08:10.276Z - INFO - Completed running function refreshMvPMProjectsAndTransactions
+2026-02-13T10:10:00.946Z - INFO - unpack_readings_json started
+2026-02-13T10:10:00.966Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:10:00.969Z - INFO - unpack_readings_json empty
+2026-02-13T10:14:54.572Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T10:14:54.575Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T10:14:54.579Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T10:14:54.583Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T10:14:54.586Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T10:14:54.589Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T10:14:54.592Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T10:14:54.595Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T10:14:54.598Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T10:15:00.061Z - INFO - unpack_readings_json started
+2026-02-13T10:15:00.064Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:15:00.068Z - INFO - unpack_readings_json empty
+2026-02-13T10:20:00.340Z - INFO - unpack_readings_json started
+2026-02-13T10:20:00.351Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:20:00.353Z - INFO - unpack_readings_json empty
+2026-02-13T10:20:26.818Z - INFO - Completed running function migrateGISData
+2026-02-13T10:24:00.848Z - INFO - Completed running function runUpdateFacilityGISData
+2026-02-13T10:24:11.048Z - INFO - processAsyncCSVParseTasks type= doBackgroundProcessing=true
+2026-02-13T10:24:11.058Z - INFO - processAsyncCSVParseTasks tasksFound=0
+2026-02-13T10:24:11.059Z - INFO - processAsyncCSVParseTasks: No tasks found to process for type=
+2026-02-13T10:25:00.776Z - INFO - unpack_readings_json started
+2026-02-13T10:25:00.788Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:25:00.792Z - INFO - unpack_readings_json empty
+2026-02-13T10:30:00.014Z - INFO - unpack_readings_json started
+2026-02-13T10:30:00.024Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:30:00.031Z - INFO - unpack_readings_json empty
+2026-02-13T10:35:00.173Z - INFO - unpack_readings_json started
+2026-02-13T10:35:00.181Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:35:00.184Z - INFO - unpack_readings_json empty
+2026-02-13T10:40:01.473Z - INFO - unpack_readings_json started
+2026-02-13T10:40:01.481Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:40:01.487Z - INFO - unpack_readings_json empty
+2026-02-13T10:45:00.227Z - INFO - unpack_readings_json started
+2026-02-13T10:45:00.233Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:45:00.235Z - INFO - unpack_readings_json empty
+2026-02-13T10:48:11.019Z - INFO - processAsyncCSVParseTasks type= doBackgroundProcessing=true
+2026-02-13T10:48:11.045Z - INFO - processAsyncCSVParseTasks tasksFound=0
+2026-02-13T10:48:11.047Z - INFO - processAsyncCSVParseTasks: No tasks found to process for type=
+2026-02-13T10:50:00.072Z - INFO - unpack_readings_json started
+2026-02-13T10:50:00.080Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:50:00.083Z - INFO - unpack_readings_json empty
+2026-02-13T10:55:00.314Z - INFO - unpack_readings_json started
+2026-02-13T10:55:00.323Z - INFO - unpack_readings_json - list count=0
+2026-02-13T10:55:00.326Z - INFO - unpack_readings_json empty
+2026-02-13T10:58:38.651Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T10:58:38.654Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T10:58:38.657Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T10:58:38.660Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T10:58:38.663Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T10:58:38.666Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T10:58:38.669Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T10:58:38.672Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T10:58:38.675Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T11:00:00.012Z - INFO - unpack_readings_json started
+2026-02-13T11:00:00.026Z - INFO - unpack_readings_json - list count=0
+2026-02-13T11:00:00.029Z - INFO - unpack_readings_json empty
+2026-02-13T11:04:32.677Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:04:32.680Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:04:32.686Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T11:04:32.694Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T11:04:32.702Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T11:04:32.709Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:04:32.718Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T11:04:32.727Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T11:04:32.733Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T11:05:11.118Z - INFO - unpack_readings_json started
+2026-02-13T11:05:11.127Z - INFO - unpack_readings_json - list count=0
+2026-02-13T11:05:11.135Z - INFO - unpack_readings_json empty
+2026-02-13T11:10:11.819Z - INFO - unpack_readings_json started
+2026-02-13T11:10:11.829Z - INFO - unpack_readings_json - list count=0
+2026-02-13T11:10:11.834Z - INFO - unpack_readings_json empty
+2026-02-13T11:10:55.094Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:10:55.096Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:10:55.100Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T11:10:55.102Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T11:10:55.105Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T11:10:55.108Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:10:55.111Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T11:10:55.115Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T11:10:55.117Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T11:11:18.584Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:11:18.586Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:11:18.589Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T11:11:18.595Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T11:11:18.601Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T11:11:18.603Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:11:18.606Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T11:11:18.609Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T11:11:18.612Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T11:15:20.362Z - INFO - unpack_readings_json started
+2026-02-13T11:15:20.368Z - INFO - unpack_readings_json - list count=0
+2026-02-13T11:15:20.371Z - INFO - unpack_readings_json empty
+2026-02-13T11:18:12.499Z - helium.app-exec.dsl.presenter - [WaterMapFuture:35] java.lang.ClassCastException
+2026-02-13T11:18:12.547Z - helium.app-exec.rest.desktop.app-processview - com.mezzanine.program.web.exception.ProgramException: java.lang.ClassCastException
+2026-02-13T11:18:14.489Z - helium.app-exec.dsl.presenter - [WaterMapFuture:200] Attempting to operate on a null json value
+2026-02-13T11:18:14.533Z - helium.app-exec.rest.desktop.app-processview - com.mezzanine.program.web.exception.ProgramException: Attempting to operate on a null json value
+2026-02-13T11:18:21.638Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:18:21.641Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:18:21.652Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_node_full
+2026-02-13T11:18:21.658Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_valve_full
+2026-02-13T11:18:21.664Z - WARN - WaterMapCurrent:feature groups fallback for layer=wa_appurtenances
+2026-02-13T11:18:21.670Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+2026-02-13T11:18:21.675Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pump_point_full
+2026-02-13T11:18:21.681Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_tank_full
+2026-02-13T11:18:21.687Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_ai_cases
+2026-02-13T11:20:02.544Z - INFO - Completed running function migrateGISData
+2026-02-13T11:20:04.596Z - INFO - unpack_readings_json started
+2026-02-13T11:20:04.603Z - INFO - unpack_readings_json - list count=0
+2026-02-13T11:20:04.606Z - INFO - unpack_readings_json empty

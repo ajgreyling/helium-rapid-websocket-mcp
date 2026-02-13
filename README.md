@@ -33,15 +33,40 @@ sequenceDiagram
 - **Cursor** with MCP support (or another MCP client)
 - Credentials for the Helium logging WebSocket (username and password)
 
+## Using the NPM package
+
+No clone or build needed. Install and run directly:
+
+```bash
+npm install helium-rapid-websocket-mcp
+```
+
+Or use npx (no install):
+
+```bash
+npx helium-rapid-websocket-mcp
+```
+
+For Cursor stdio mode, add to `mcp.json` and point at the package:
+
+- **npx:** `"command": "npx"`, `"args": ["-y", "helium-rapid-websocket-mcp"]`
+- **Installed:** `"command": "node"`, `"args": ["${workspaceFolder}/node_modules/helium-rapid-websocket-mcp/build/index.js"]`
+
+See [Cursor configuration](#cursor-configuration) for full examples.
+
 ## Configuration: credentials and WebSocket URL
 
 The server requires three values. Set them via environment variables or a `.env` file.
 
-| Variable      | Required | Description                                                  |
-| ------------- | -------- | ------------------------------------------------------------ |
-| `WS_URL`      | Yes      | WebSocket endpoint, e.g. `wss://helium.mezzanineware.com/api/ws2/logging?appId=YOUR_APP_ID` |
-| `WS_USER`     | Yes      | Username for Basic auth (same as `wscat -c ... --auth $u:$p`) |
-| `WS_PASSWORD` | Yes      | Password for Basic auth                                     |
+| Variable                     | Required | Description                                                                 |
+| ---------------------------- | -------- | --------------------------------------------------------------------------- |
+| `WS_URL`                     | Yes      | WebSocket endpoint, e.g. `wss://helium.mezzanineware.com/api/ws2/logging?appId=YOUR_APP_ID` |
+| `WS_USER`                    | Yes      | Username for Basic auth (same as `wscat -c ... --auth $u:$p`)                |
+| `WS_PASSWORD`                | Yes      | Password for Basic auth                                                     |
+| `OUTPUT_TO_CURSOR_DEBUG_LOG` | No       | Set to `"true"` to pipe websocket output to a file for Cursor Debug mode     |
+| `DEBUG_LOG_FILE`             | No*      | Path for the debug log file (e.g. `"${workspaceFolder}/.cursor/debug.log"`)  |
+
+*`DEBUG_LOG_FILE` is required when `OUTPUT_TO_CURSOR_DEBUG_LOG` is true. Cursor resolves `${workspaceFolder}` when used in mcp.json.
 
 **Alternative:** Use `WS_AUTH=username:password` instead of `WS_USER` and `WS_PASSWORD`.
 
@@ -80,6 +105,34 @@ For `mcp.json`, use Cursor’s interpolation so credentials stay out of the conf
 - `"WS_PASSWORD": "${env:HELIUM_PASSWORD}"` — same
 
 Then set `HELIUM_USER` and `HELIUM_PASSWORD` in your environment, or use `envFile` in `mcp.json` to load a `.env` that defines them.
+
+### Output to Cursor Debug log
+
+When debugging with Cursor, you can pipe websocket output to a formatted file that the agent can read.
+
+1. Set `OUTPUT_TO_CURSOR_DEBUG_LOG` to `"true"` in `mcp.json` `env`.
+2. Set `DEBUG_LOG_FILE` to the output path, e.g. `"${workspaceFolder}/.cursor/debug.log"`.
+
+Example `mcp.json` env block:
+
+```json
+"env": {
+  "MCP_TRANSPORT": "stdio",
+  "WS_URL": "wss://helium.mezzanineware.com/api/ws2/logging?appId=YOUR_APP_ID",
+  "WS_USER": "${env:HELIUM_USER}",
+  "WS_PASSWORD": "${env:HELIUM_PASSWORD}",
+  "OUTPUT_TO_CURSOR_DEBUG_LOG": "true",
+  "DEBUG_LOG_FILE": "${workspaceFolder}/.cursor/debug.log"
+}
+```
+
+Log messages in Helium JSON format are parsed and written as: `{ISO timestamp} - {LEVEL} - {message}`. For example:
+
+```
+2026-02-13T10:45:18.651Z - WARN - WaterMapCurrent:feature groups fallback for layer=vw_geo_wa_pipe_full
+```
+
+Connection lifecycle events (open, close, error) are also written. Non-JSON or malformed messages are written unchanged.
 
 ## Setup
 
